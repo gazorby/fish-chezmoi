@@ -1,8 +1,10 @@
-abbr -a cm 'chezmoi'
-abbr -a cma 'chezmoi add'
-abbr -a cmap 'chezmoi apply'
-abbr -a cmu 'chezmoi update'
-abbr -a cmd 'chezmoi diff'
+function __fish_chezmoi_install --on-event fish_chezmoi_install
+    abbr -a cm 'chezmoi'
+    abbr -a cma 'chezmoi add'
+    abbr -a cmap 'chezmoi apply'
+    abbr -a cmu 'chezmoi update'
+    abbr -a cmd 'chezmoi diff'
+end
 
 
 function __fish_chezmoi_uninstall --on-event fish_chezmoi_uninstall
