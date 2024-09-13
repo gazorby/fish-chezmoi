@@ -7,7 +7,7 @@
 Using [fisher](https://github.com/jorgebucaran/fisher)
 
 ```bash
-fisher add gazorby/fish-chezmoi
+fisher install gazorby/fish-chezmoi
 ```
 
 ## 🔧 Usage
