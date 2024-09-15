@@ -12,12 +12,13 @@ fisher install gazorby/fish-chezmoi
 
 ## 🔧 Usage
 
-| Abbreviation | Command        |
-| ------------ | -------------- |
-| cm           | chezmoi        |
-| cma          | chezmoi add    |
-| cmap         | chezmoi apply  |
-| cmu          | chezmoi update |
+| Abbreviation | Command              |
+| ------------ | -------------------- |
+| cm           | chezmoi              |
+| cma          | chezmoi add          |
+| cmea         | chezmoi edit --apply |
+| cmap         | chezmoi apply        |
+| cmu          | chezmoi update       |
 
 
 ## 📝 License
