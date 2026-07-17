@@ -1,8 +1,6 @@
 function _fish_chezmoi_install --on-event fish_chezmoi_install
+    _fish_chezmoi_uninstall
     set -U __fish_chezmoi_abbreviations
-    if not builtin -q abbr
-        _fish_chezmoi_init
-    end
 end
 
 function _fish_chezmoi_update --on-event fish_chezmoi_update
@@ -11,10 +9,7 @@ function _fish_chezmoi_update --on-event fish_chezmoi_update
 end
 
 function _fish_chezmoi_uninstall --on-event fish_chezmoi_uninstall
-    for ab in $__fish_chezmoi_abbreviations
-        abbr --erase $ab
-    end
-    set -Ue __fish_chezmoi_abbreviations
+    _fish_chezmoi_destroy
 end
 
 # Starting from fish 3.6.0, 'abbr' is a builtin and abbreviations are no longer stored
